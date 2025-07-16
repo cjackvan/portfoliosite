@@ -1,0 +1,336 @@
+.youtube {
+  width: 100vw;
+  height: 50vh;
+  max-width: 1000px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.mainimage {
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: 1400px;
+}
+
+.project1nav {
+  text-align: center;
+  margin: 0 auto;
+}
+.project2nav {
+  text-align: center;
+  margin: 0 auto;
+}
+.project3nav {
+  text-align: center;
+  margin: 0 auto;
+}
+.project4nav {
+  text-align: center;
+  margin: 0 auto;
+}
+.smallimg {
+  width: 100vw;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  max-width: 800px;
+  display: inline-block;
+}
+
+.descriptioncontent {
+  width: 100vw;
+  max-width: 1200px;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.content {
+  position: relative;
+  width: 80vw;
+  max-width: 1400px;
+  background: red;
+  z-index: 0;
+  display: block;
+  margin: auto auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: none;
+  display: flex;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 80vw;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid black;
+}
+
+/* .content:hover .overlay {
+  opacity: 1;
+} */
+
+.text {
+  color: black;
+  font-size: 12px;
+  position: absolute;
+  padding-bottom: 20px;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  margin: 0 auto;
+
+  overflow-y: scroll; /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
+}
+
+.sticky {
+  width: 100%;
+  position: fixed; /*Here's what sticks it*/
+  bottom: 0; /*to the bottom of the window*/
+  z-index: 0;
+}
+.divsticky {
+  position: fixed; /*Here's what sticks it*/
+  right: 0;
+  top: 0; /*to the bottom of the window*/
+  z-index: 0;
+}
+
+.topsticky {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 0;
+}
+
+p {
+  color: black;
+  font-family: Acumin;
+
+  font-size: 14px;
+  letter-spacing: 0px;
+
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 800px;
+  text-align: left;
+}
+
+h1 {
+  float: right;
+  color: black;
+  font-family: Acumin;
+
+  font-size: 14px;
+  /*   letter-spacing: -2px; */
+  display: inline-block;
+  padding-right: 20px;
+}
+h2 {
+  float: left;
+  color: black;
+  font-family: Acumin;
+
+  font-size: 14px;
+  /*   letter-spacing: -2px; */
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+h3 {
+  float: left;
+  color: black;
+  font-family: Acumin;
+
+  font-size: 14px;
+  padding-bottom: 20px;
+  /*   letter-spacing: -2px; */
+
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  text-align: left;
+}
+/* a:link {
+   color:black;
+} */
+a:hover {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Acumin";
+  src: url(https://cdn.glitch.global/c949f2cb-7bf0-4edc-9592-c7bcdff248bb/AcuminVariableConcept.otf?v=1718120291402);
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+@media only screen and (min-width: 1000px) {
+  .mainimage {
+    width: 100%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    display: block;
+  }
+
+  p {
+    margin-bottom: 40px;
+    max-width: 1000px;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    text-align: left;
+  }
+
+  .descriptioncontent {
+    width: 40vw;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .smallimg {
+    width: 100%;
+    max-width: 1000px;
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .sticky {
+    width: 100%;
+    position: fixed; /*Here's what sticks it*/
+    bottom: 0; /*to the bottom of the window*/
+    z-index: 0;
+  }
+
+  .overlay {
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 40vw;
+    opacity: 0;
+    transition: 1s ease;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid black;
+    display: inline-block;
+    text-align: center;
+  }
+
+  h1 {
+    color: black;
+    font-family: Acumin;
+
+    /*   letter-spacing: -2px; */
+    display: inline-block;
+    padding-left: 20px;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+
+  h2 {
+    color: black;
+    font-family: Acumin;
+
+    /*   letter-spacing: -2px; */
+    display: inline-block;
+  }
+
+  h3 {
+    float: left;
+    color: black;
+    font-family: Acumin;
+
+    font-size: 14px;
+    /*   letter-spacing: -2px; */
+  }
+
+  .youtube {
+    width: 40vw;
+    height: 50vh;
+    max-width: 1000px;
+    padding-top: 0px;
+    /*   padding-bottom: 20px;  padding is elsewhere (p, img)*/
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .content {
+    position: relative;
+    width: 40vw;
+    max-width: 1400px;
+    background: red;
+    z-index: 0;
+    display: block;
+    margin: auto auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container {
+    width: 100vw;
+    height: 100vh;
+    background-color: none;
+    display: flex;
+  }
+
+  audio {
+    margin-top: 0;
+  }
+} /* end query*/
