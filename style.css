@@ -326,7 +326,7 @@ a:visited {
   .container {
     width: 100vw;
     height: 100vh;
-    background-color: none;
+    background-color: #acada8;
     display: flex;
   }
 
